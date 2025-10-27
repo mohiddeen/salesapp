@@ -8,8 +8,8 @@ import streamlit as st
 #convert our project to streamlit app
 
 # To load the model and encoder later, use:
-model = joblib.load('../models/sales_model.pkl')
-encoder = joblib.load('../models/sales_encoder.pkl')
+model = joblib.load('sales_model.pkl')
+encoder = joblib.load('sales_encoder.pkl')
 
 # Accept user input for prediction
 month = st.selectbox("Select month", ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"])
@@ -37,4 +37,5 @@ if st.button("Predict Sales"):
 
     # print the result
     st.success(f"Prediction: {result}")
+
 
