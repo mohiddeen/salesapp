@@ -1,7 +1,7 @@
 # A sales forecasting model using Decision Tree Regressor
 
 # import required libraries
-import  pandas as pd
+import pandas as pd
 import joblib
 import streamlit as st
 
@@ -37,5 +37,6 @@ if st.button("Predict Sales"):
 
     # print the result
     st.success(f"Prediction: {result}")
+
 
 
